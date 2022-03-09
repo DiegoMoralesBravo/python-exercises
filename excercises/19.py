@@ -19,3 +19,19 @@
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # We use itemgetter to enable multiple sort keys.
+from operator import itemgetter
+
+
+lista = []
+while True:
+    s = input()
+    if s:
+        tupla = s.split(',')
+        tupla[1], tupla[2] = int(tupla[1]), int(tupla[2])
+        tupla = tuple(tupla)
+        lista.append(tupla)
+    else:
+        break
+
+lista.sort(key=itemgetter(0, 1, 2))
+print(lista)
