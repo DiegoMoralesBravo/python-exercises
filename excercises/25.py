@@ -14,3 +14,7 @@ class Objeto():
 
     def imprimir(self):
         print(self.parametro)
+
+
+valor = Objeto('hola')
+valor.imprimir()
