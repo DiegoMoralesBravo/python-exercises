@@ -4,3 +4,14 @@
 # Hints:
 #
 # Use % operator to check if a number is even or odd.
+
+def funcion(x):
+    msn = ''
+    if x % 2 == 0:
+        msn = 'Its an even number'
+    else:
+        msn = 'Its an odd number'
+    return msn
+
+
+print(funcion(2))
