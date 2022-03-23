@@ -7,3 +7,6 @@
 # Use range() for loops.
 # Use list.append() to add values into a list.
 # Use [n1:n2] to slice a list
+
+lista = [x**2 for x in range(1, 21)]
+print(lista[5:])
